@@ -1,17 +1,17 @@
-[project]
+[tool.poetry]
 name = "aula17-sql-alchemy"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "danilovieira37",email = "danilovieira37@icloud.com"}
-]
+authors = ["danilovieira37 <danilovieira37@icloud.com>"]
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "sqlalchemy (>=2.0.41,<3.0.0)"
-]
+package-mode = false
 
+[tool.poetry.dependencies]
+python = ">=3.12"
+sqlalchemy = ">=2.0.41,<3.0.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+
